@@ -1,11 +1,11 @@
-const process = require("process");
-const commands = require("./commands/index.js");
+const process = require('process');
+const { Z_ASCII } = require('zlib');
+const commands = require('./commands/index.js');
 
-function bash() {
-}
+function bash() {}
 
 bash();
 module.exports = {
-  print,
-  bash,
+   print,
+   bash,
 };

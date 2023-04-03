@@ -1,4 +1,4 @@
-# HW 06: Async Await | Ejercicios
+# **HW 06 Async Await | Ejercicios**
 
 ## **🕒 Duración estimada**
 
@@ -30,7 +30,7 @@ Recordar modificar el `xit` por `it` en los tests para ir corriendo el test que 
 
 🔹 Para poder ejecutar los `test` de esta homework, es necesario que abramos la terminal ubicados dentro de la carpeta `01 - Exercises`.
 
-- Cuando te encuentres en esta carpeta, debes ejecutar el comando
+-  Cuando te encuentres en esta carpeta, debes ejecutar el comando
 
 ```bash
 npm install
@@ -56,14 +56,14 @@ npm run test:01
 
 🔹 Dentro de la carpeta `01 - Exercises`, vas a encontrar la siguiente estructura:
 
-- Una carpeta llamada **poem-one**.
-- Una carpeta llamada **poem-two**.
-- Una carpeta llamada **tests**
-- Un archivo `exercises-one.js`.
-- Un archivo `exercises-two.js`.
-- Un archivo package.json
-- Un archivo **utils.js**
-- Y el archivo **README.md** que ahora mismo estás leyendo. 😙
+-  Una carpeta llamada **poem-one**.
+-  Una carpeta llamada **poem-two**.
+-  Una carpeta llamada **tests**
+-  Un archivo `exercises-one.js`.
+-  Un archivo `exercises-two.js`.
+-  Un archivo package.json
+-  Un archivo **utils.js**
+-  Y el archivo **README.md** que ahora mismo estás leyendo. 😙
 
 ---
 
@@ -83,8 +83,7 @@ npm run test:01
 
 📍 Lo que hay que hacer:
 
-1. Función problemA:
-   En este ejercicio debes loguear del **poem-one** la stanza 1 e ignorar errores.
+1. Función problemA: En este ejercicio debes loguear del **poem-one** la stanza 1 e ignorar errores.
 
    a. Utiliza el método `promisifiedReadFile`, que se encuentra dentro del archivo **utils.js**, este método nos devuelve una promesa que a su vez nos entrega el contenido del archivo.
 
@@ -92,8 +91,7 @@ npm run test:01
 
    c. Dentro de la función blue espera con `await` el método **promisifiedReadFile** que a su vez recibe como parámetro la ruta donde se encuentra **stanza-01.txt**, recuerda que ésta se encuentra en la carpeta **poem-one**, por el momento ignora los errores.
 
-2. Función problemB:
-   En este ejercicio la finalidad es loguear del `poem-one` las stanzas **stanza-02.txt** y **stanza-03.txt**, en cualquier orden.
+2. Función problemB: En este ejercicio la finalidad es loguear del `poem-one` las stanzas **stanza-02.txt** y **stanza-03.txt**, en cualquier orden.
 
    a. La función **problem B** debe tener el `async`
 
@@ -103,8 +101,7 @@ npm run test:01
 
    d.Para finalizar llama la función asíncrona dos veces, pasa como argumento la **stanza-02.txt** en una llamada y en la otra llamada la **stanza-03.txt**.
 
-3. Función problemC:
-   En este ejercicio el objetivo es leer y loguear del poema uno, la **stanza-02.txt** y después leer y loguear la **stanza-03.txt**, luego debes loguear 'done' cuando ambas promesas hayan terminado, los tests esperan la palabra exacta `done`(case sensitive) para ser logueada y pasar. Ignora el manejo de errores por este ejercicio:
+3. Función problemC: En este ejercicio el objetivo es leer y loguear del poema uno, la **stanza-02.txt** y después leer y loguear la **stanza-03.txt**, luego debes loguear 'done' cuando ambas promesas hayan terminado, los tests esperan la palabra exacta `done`(case sensitive) para ser logueada y pasar. Ignora el manejo de errores por este ejercicio:
 
    a. La función **problem C** debe tener el `async`, llama la función `blue` que se encuentra en el archivo **utils.js**.
 
@@ -116,8 +113,7 @@ npm run test:01
 
    c. Vuelve a llamar el método **.then** que haga lo mismo que se realizó para la **stanza-02.txt**.
 
-4. Función problemD:
-   En este ejercicio debes loguear del **poem-one** la **stanza-04.txt** o un error si llega a ocurrir:
+4. Función problemD: En este ejercicio debes loguear del **poem-one** la **stanza-04.txt** o un error si llega a ocurrir:
 
    a. La función **problem D** debe tener el `async`.
 
@@ -129,8 +125,7 @@ npm run test:01
 
    e. Dentro del bloque `catch` quien recibe como parámetro un error, en el cuerpo del catch invoca la función `magenta` que se encuentra en el archivo **utils.js**, pasándole como argumento el error.
 
-5. Función problemE:
-   Teniendo de base los ejercicios anteriores, en esta función debes leer y loguear la **stanza-03.txt**, luego debe leer y loguear la **stanza-04.txt**, maneja errores logueando un error si llegara a suceder para cualquiera de las dos stanzas.
+5. Función problemE: Teniendo de base los ejercicios anteriores, en esta función debes leer y loguear la **stanza-03.txt**, luego debe leer y loguear la **stanza-04.txt**, maneja errores logueando un error si llegara a suceder para cualquiera de las dos stanzas.
 
    a. La función **problem E** debe tener el `async`.
 
@@ -144,8 +139,7 @@ npm run test:01
 
    f. Dentro del bloque `catch` quien recibe como parámetro un error, en el cuerpo del catch invoca la función `magenta` que se encuentra en el archivo **utils.js**, pasándole como argumento el error.
 
-6. Función problemF:
-   Teniendo de base los ejercicios anteriores, en esta función debes leer y loguear la **stanza-03.txt**, Luego debe leer y la **stanza-04.txt**, maneja errores logueando un error si llegara a suceder para cualquiera de las dos stanzas y por último, tanto en el bloque try como en el catch siempre debes loguear `'done'` cuando haya terminado todo.
+6. Función problemF: Teniendo de base los ejercicios anteriores, en esta función debes leer y loguear la **stanza-03.txt**, Luego debe leer y la **stanza-04.txt**, maneja errores logueando un error si llegara a suceder para cualquiera de las dos stanzas y por último, tanto en el bloque try como en el catch siempre debes loguear `'done'` cuando haya terminado todo.
 
    a. La función **problem F** debe tener el `async`.
 
@@ -233,9 +227,9 @@ npm run test:01
 
 ## **🧠 Recuerda que...**
 
-- Usamos try-catch para que cuando ejecutemos nuestro código podamos detectar y manejar errores.
+-  Usamos try-catch para que cuando ejecutemos nuestro código podamos detectar y manejar errores.
 
-- `async` significa asincrónico y `await` hace que Javascript espere hasta que una promesa se resuelva y devuelva su respectivo resultado.
+-  `async` significa asincrónico y `await` hace que Javascript espere hasta que una promesa se resuelva y devuelva su respectivo resultado.
 
 -`async-await` es otro mecanismo de Javascript para manejar el asincronismo, la palabra **async** antes de una función indica a la función que debe devolver una promesa y **await** se usa dentro de la función asincrónica esperando a que se resuelva la promesa.
 
@@ -245,9 +239,9 @@ npm run test:01
 
 ## **🔎 Recursos adicionales**
 
-- Documentación [**async-await**](https://javascript.info/async-await)
+-  Documentación [**async-await**](https://javascript.info/async-await)
 
-- [**try-catch**](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/try...catch)
+-  [**try-catch**](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/try...catch)
 
 ---
 

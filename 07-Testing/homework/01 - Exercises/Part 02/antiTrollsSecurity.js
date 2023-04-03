@@ -1,10 +1,3 @@
-const antiTrollsSecurity = (string) => {
-   return string
-      .split('')
-      .filter((l) => {
-         return !'AaEeIiOoUu'.includes(l);
-      })
-      .join('');
-};
+const antiTrollsSecurity = (string) => {};
 
 module.exports = antiTrollsSecurity;

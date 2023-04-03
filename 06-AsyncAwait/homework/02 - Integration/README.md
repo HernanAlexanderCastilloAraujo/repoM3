@@ -1,92 +1,84 @@
-# HW 06: AsyncAwait | Integración
+# **💪 HW6 | Async Await - Integration**
 
-## **🕒 Duración estimada**
+## **🕒 DURACIÓN ESTIMADA**
 
-x minutos
-
-<br />
-
----
-
-## **💻 Rick & Morty App**
-
-### **📝 INTRO**
-
-En esta homework vamos a seguir trabajando en nuetra App de Rick & Morty del lado del servidor. En base a las rutas asincrónicas ya creadas, vamos a pasarlas de promesas a AsyncAwait.
-
-Las rutas que tenemos creadas hasta el momento son:
-
-- GET onSearch
-- GET Detail
-- GET favorites
-- POST favorites
-- DELETE favorites
+XX minutos
 
 <br />
 
 ---
 
-## **📋 INSTRUCCIONES**
+<div align="center">
 
-### **👩‍💻 EJERCICIO 1**
+## **💻 RICK AND MORTY APP 💻**
 
-### **GET Search**
+</div>
 
-1. Dirígete a tu carpeta `controllers` y en el archivo llamado `getCharById.js`, en la función llamada _getCharById_ ya estás haciendo una petición (_código asincrónico_) a la URL `https://rickandmortyapi.com/api/character/`. Así que sólo debes cambiar de promesas a `async await`.
+## **📝 INTRODUCCIÓN**
 
-2. Para el manejo de errores, en el caso de que la promesa falle, envuelve el código dentro del bloque try-catch:
+En esta homework vamos a transformar todas nuestras funciones asincrónicas que utilizan promesas a **`async await`**.
 
-   - Dentro del bloque `try` inyecta el código donde haces el llamado y la lógica antes realizada.
-
-   - Dentro del bloque `catch`, éste debe recibir como parámetro el `error` y devuelve una respuesta con status `500`y enviar un mensaje de error y/o con la propiedad **message** del error que recibe el catch como parámetro.
+🤓 ¿Preparad@? 🤓
 
 <br />
 
 ---
 
-### **👩‍💻 EJERCICIO 2**
+<div align="center">
 
-### **GET Detail**
+## **📋 INSTRUCCIONES 📋**
 
-Ahora modificaremos la ruta de detalle de promesas a async await.
+</div>
 
-1. Dirígete a tu carpeta `controllers`, en el archivo llamado `getCharDetail.js`, en la función llamada _getCharDetail_ implementa los mismos pasos del ejercicio anterior.
+## **🚀 PARTE 1 | Server 🚀**
+
+<br />
+
+### **👩‍💻 EJERCICIO 1 | GET getCharById**
+
+Dirígete a tu carpeta **`controllers`** y modifica la función **`getCharById`** de modo tal que utilices **async/await** y no promesas.
+
+2. Para manejar correctamente el error envuelve el contenido de esta función en un **try-catch**.
 
 <br />
 
 ---
 
-### **👩‍💻 EJERCICIO 3**
+## **🚀 PARTE 2 | Client 🚀**
 
-### **GET Favorites**
+<br />
 
-Ahora trabajaremos en la ruta de favoritos, en el método get creada en la **homework 05-Express** y la pasaremos de promesas a async await.
+### **👩‍💻 EJERCICIO 2 | APP**
 
-1. Dirígete a tu carpeta `controllers`, en el archivo llamado `getFavorites.js`, en la función llamada _getFavorites_ implementa los mismos pasos del ejercicio anterior.
+Dirígete a tu archivo **`App.js`** y modifica:
+
+1. La función **`onSearch`** de modo tal que utilices **async/await** y no promesas.
+
+2. La función **`login`** de modo tal que utilices **async/await** y no promesas.
+
+3. Para manejar correctamente el error envuelve el contenido de ambas funciones en un **try-catch**.
 
 <br />
 
 ---
 
-### **👩‍💻 EJERCICIO 4**
+### **👩‍💻 EJERCICIO 3 | ACTIONS**
 
-### **POST Favorites**
+Dirígete a tu archivo **`/redux/actions.js`** y modifica:
 
-Ahora trabajaremos en la ruta de favoritos, en el método post creada en la **homework 05-Express** y la pasaremos de promesas a async await.
+1. La función **`addFav`** de modo tal que utilices **async/await** y no promesas.
 
-1. Dirígete a tu carpeta `controllers`, en el archivo llamado `postFavorites.js`, en la función llamada _postFavorites_ implementa los mismos pasos del ejercicio anterior.
+2. La función **`removeFav`** de modo tal que utilices **async/await** y no promesas.
+
+3. Para manejar correctamente el error envuelve el contenido de ambas funciones en un **try-catch**.
 
 <br />
 
 ---
 
-### **👩‍💻 EJERCICIO 5**
+<br />
 
-### **DELETE Favorites**
-
-Ahora trabajaremos en la ruta de favoritos, en el método delete creada en la **homework 05-Express** y la pasaremos de promesas a async await.
-
-1. Dirígete a tu carpeta `controllers`, en el archivo llamado `deleteFavorites.js`, en la función llamada _deleteFavorites_ implementa los mismos pasos del ejercicio anterior.
+> [**NOTA**]: no modificaremos el archivo **`Detail.jsx`** porque suele ser más conveniente utilizar promesas en los **useEffect** que utilizar async/await.
 
 <br />
 
@@ -94,40 +86,9 @@ Ahora trabajaremos en la ruta de favoritos, en el método delete creada en la **
 
 ### **👀 COMPROBEMOS...**
 
-Levanta el servidor con el comando:
+Levanta el servidor y tu proyecto Front-End. Revisa que todo aún funcione correctamente:
 
-```bash
-    npm start
-```
-
-Una vez levantado, verifica lo siguiente:
-
-</br >
-
-### **FRONTEND**
-
-### **ACTIONS**
-
-Haremos un par de cambios en el lado frontend:
-
-1. La action `addFavorites`, ahora debe ser una función asíncrona, promisificada con async/await, manejando errores con try/catch que envíe el personaje favorito al endpoint con el método POST **http://localhost:3001/rickandmorty/fav**.
-
-2. La action `removeFavorites`, ahora debe ser una función asíncrona, promisificada con async/await, manejando errores con try/catch que elimine el personaje favorito con el método DELETE al endpoint **http://localhost:3001/rickandmorty/fav**.
-
-3. Crea una action `getFavorites`, debe ser una función asíncrona, promisificada con async/await, manejando errores con try/catch que solicite el personaje favorito con el método GET al endpoint **http://localhost:3001/rickandmorty/fav**.
-
-4. Levanta también tu aplicación en **http://localhost:3000** para ver tu aplicación Rick & Morty funcionando completamente.
-
----
-
-</br >
-
-## **🚨 A TENER EN CUENTA**
-
-Si tu servidor no está levantado, o si los links no fueron bien escritos, tu aplicación no funcionará correctamente.
-
-</br >
-
----
-
-¡Felicitaciones! Ahora tienes una comunicación front-back completa!🥳🥳
+1. Que puedas traer cualquier personaje por su **id** desde la Search Bar.
+2. Que puedas ingresar al detalle de cualquier personaje que hayas encontrado.
+3. Que puedas agregar todos los personajes que quieras a tus favoritos.
+4. Que puedas eliminar a todos los personajes que quieras de tus favoritos.

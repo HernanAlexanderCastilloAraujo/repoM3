@@ -1,4 +1,4 @@
-# HW 04: Advanced Promises | Ejercicios
+# **HW 04 Advanced Promises | Ejercicios**
 
 ## **🕒 Duración estimada**
 
@@ -38,7 +38,7 @@ Este workshop está basado en un test spec de [Jasmine 2](https://jasmine.github
 
 🔹 Para poder ejecutar los `test` de esta homework, es necesario que abramos la terminal ubicados dentro de la carpeta `01 - Exercises`.
 
-- Cuando te encuentres en esta carpeta, vamos a necesitar Node.js y su package manager npm instalado, para ello debes ejecutar el comando:
+-  Cuando te encuentres en esta carpeta, vamos a necesitar Node.js y su package manager npm instalado, para ello debes ejecutar el comando:
 
 ```bash
 npm install
@@ -62,25 +62,25 @@ npm test
 
 🔹 Dentro de la carpeta `01 - Exercises`, vas a encontrar la siguiente estructura:
 
-- Una carpeta llamada **docs**.
-- Una carpeta llamada **src**.
-- Una carpeta llamada `test`
-- Una carpeta llamada `utils`.
-- Un archivo `gulpfile.js`.
-- package.json
-- Un archivo `SpecRunner.html`
-- Y el archivo **README.md** que ahora mismo estás leyendo. 😙
+-  Una carpeta llamada **docs**.
+-  Una carpeta llamada **src**.
+-  Una carpeta llamada `test`
+-  Una carpeta llamada `utils`.
+-  Un archivo `gulpfile.js`.
+-  package.json
+-  Un archivo `SpecRunner.html`
+-  Y el archivo **README.md** que ahora mismo estás leyendo. 😙
 
 🔹 Dentro de la carpeta `docs`, vas a encontrar la siguiente estructura y documentación que servirá de base para resolver la homework:
 
-- Una carpeta llamada `public`.
-- Un archivo llamado `docco.css`.
-- Un archivo llamado `pledge.spec.ch1`
-- Un archivo llamado `pledge.spec.ch2`
-- Un archivo llamado `pledge.spec.ch3`
-- Un archivo llamado `pledge.spec.ch4`
-- Un archivo llamado `pledge.spec.ch5`
-- Y el archivo `Promises Flowchart.pdf`
+-  Una carpeta llamada `public`.
+-  Un archivo llamado `docco.css`.
+-  Un archivo llamado `pledge.spec.ch1`
+-  Un archivo llamado `pledge.spec.ch2`
+-  Un archivo llamado `pledge.spec.ch3`
+-  Un archivo llamado `pledge.spec.ch4`
+-  Un archivo llamado `pledge.spec.ch5`
+-  Y el archivo `Promises Flowchart.pdf`
 
 > Hint: El archivo **Promises Flowchart.pdf** lo necesitarás cuando te encuentres en el capítulo 4 del spec.
 
@@ -130,13 +130,13 @@ El capítulo 5 del spec es una sección opcional en dos importantes métodos de 
 
 ## **🧠 Recuerda que...**
 
-- Las promesas proporcionan un objeto que representa el estado de una función asincrónica y los valores que devuelve.
+-  Las promesas proporcionan un objeto que representa el estado de una función asincrónica y los valores que devuelve.
 
-- De acuerdo con el estado de las promesas establecidas, si están resueltas o rechazadas, puedes encadenar promesas para utilizar este estado.
+-  De acuerdo con el estado de las promesas establecidas, si están resueltas o rechazadas, puedes encadenar promesas para utilizar este estado.
 
-- Podemos encadenar promesas con los métodos del prototipo de objeto Promise: .then y .catch.
+-  Podemos encadenar promesas con los métodos del prototipo de objeto Promise: .then y .catch.
 
-- Promise.all es una función estática que combina una serie de promesas en una sola promesa.
+-  Promise.all es una función estática que combina una serie de promesas en una sola promesa.
 
 ---
 
@@ -144,6 +144,6 @@ El capítulo 5 del spec es una sección opcional en dos importantes métodos de 
 
 ## **🔎 Recursos adicionales**
 
-- _Una promesa representa el eventual resultado de una operación asincrónica._ - [Promises/A+](https://promisesaplus.com/)
+-  _Una promesa representa el eventual resultado de una operación asincrónica._ - [Promises/A+](https://promisesaplus.com/)
 
-- El punto de las promesas es darnos devuelta composición funcional y _error bubbling_ en el mundo asincrónico. - [Domenic Denicola](https://blog.domenic.me/youre-missing-the-point-of-promises/)
+-  El punto de las promesas es darnos devuelta composición funcional y _error bubbling_ en el mundo asincrónico. - [Domenic Denicola](https://blog.domenic.me/youre-missing-the-point-of-promises/)

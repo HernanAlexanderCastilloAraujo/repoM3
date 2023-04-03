@@ -1,8 +1,8 @@
-# HW 02: WEB SERVER | Ejercicios
+# **HW 02 WEB SERVER | Ejercicios**
 
 ## **🕒 Duración estimada**
 
-x minutos
+90 minutos
 
 ---
 
